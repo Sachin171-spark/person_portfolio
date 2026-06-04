@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Learn more about Sachin - Lead Developer, experiences, education, and technical skill set.">
+  <title>About Me | Sachin</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- --- Header / Navbar --- -->
+  <header id="header">
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        Sachin<span>.dev</span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="project.html">Projects</a></li>
+        <li><a href="index.html#contact" class="btn btn-secondary" style="padding: 0.5rem 1.2rem; font-size: 0.85rem;">Hire Me</a></li>
+      </ul>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- --- About Introduction --- -->
+  <section class="about-hero" style="padding-top: 150px; min-height: 70vh; display: flex; align-items: center;">
+    <div class="container">
+      <div class="hero-grid" style="align-items: flex-start;">
+        <div class="about-intro-text">
+          <span class="hero-subtitle">My Biography</span>
+          <h1 class="hero-title">Designing & Coding for the <span class="gradient-text">Next Generation</span></h1>
+          <p class="hero-description" style="margin-bottom: 1.5rem;">
+            I am a software engineer based in San Francisco, specialized in frontend performance, design engineering, and backend architectures. I have a passion for crafting robust code systems that deliver seamless and visually premium end-user experiences.
+          </p>
+          <p class="hero-description" style="margin-bottom: 2rem;">
+            With over 4 years of industry experience, I thrive at the intersection of pixel-perfect UI and scalable database design. I'm always looking to push the boundaries of what is possible on the web.
+          </p>
+          <a href="#" class="btn btn-primary" onclick="event.preventDefault(); alert('Resume download started! (Demo mock)');">
+            Download Resume <i class="fa-solid fa-download"></i>
+          </a>
+        </div>
+        
+        <div style="display: flex; justify-content: center; position: relative;">
+          <div class="glass-card" style="padding: 1.5rem; text-align: center; border-radius: 20px; width: 100%; max-width: 360px;">
+            <!-- Tech stack graphics/badge container -->
+            <div style="background: var(--bg-dark-accent); border-radius: 12px; height: 260px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; border: 1px solid var(--glass-border); overflow: hidden;">
+              <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="width: 60%; height: 60%;">
+                <circle cx="50" cy="50" r="30" fill="none" stroke="url(#avatar-gradient)" stroke-width="2" stroke-dasharray="10 5"/>
+                <path d="M50 20 L50 80 M20 50 L80 50" stroke="var(--accent-cyan)" stroke-width="1.5" opacity="0.5"/>
+                <rect x="42" y="42" width="16" height="16" rx="4" fill="var(--bg-dark)" stroke="var(--accent-violet)" stroke-width="2"/>
+                <circle cx="50" cy="50" r="3" fill="var(--accent-cyan)"/>
+              </svg>
+            </div>
+            <h3>Sachin</h3>
+            <p style="font-size: 0.9rem; color: var(--accent-cyan); margin-bottom: 0.5rem; font-weight: 500;">San Francisco, CA</p>
+            <div style="display: flex; gap: 0.75rem; justify-content: center;">
+              <span style="background: rgba(255,255,255,0.05); padding: 0.25rem 0.6rem; border-radius: 10px; font-size: 0.75rem; color: var(--text-muted);">React</span>
+              <span style="background: rgba(255,255,255,0.05); padding: 0.25rem 0.6rem; border-radius: 10px; font-size: 0.75rem; color: var(--text-muted);">Node.js</span>
+              <span style="background: rgba(255,255,255,0.05); padding: 0.25rem 0.6rem; border-radius: 10px; font-size: 0.75rem; color: var(--text-muted);">SQL</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- --- Skills Grid Section --- -->
+  <section id="skills" style="background-color: var(--bg-dark-accent);">
+    <div class="container">
+      <div class="section-header" style="text-align: center; margin: 0 auto 5rem; max-width: 600px;">
+        <span class="section-subtitle">My Stack</span>
+        <h2 class="section-title">Technical Expertise</h2>
+        <p>A categorized view of tools, frameworks, and languages I actively use to bring digital ideas to life.</p>
+      </div>
+
+      <div class="skills-container">
+        <!-- Category 1 -->
+        <div class="glass-card">
+          <h3 class="skill-category-title">Frontend</h3>
+          <div class="skills-list">
+            <div class="skill-item">
+              <div class="skill-header">
+                <span>React / Next.js</span>
+                <span>90%</span>
+              </div>
+              <div class="skill-bar-bg">
+                <div class="skill-bar-fill" data-width="90%"></div>
+              </div>
+            </div>
+            
+            <div class="skill-item">
+              <div class="skill-header">
+                <span>TypeScript</span>
+                <span>85%</span>
+              </div>
+              <div class="skill-bar-bg">
+                <div class="skill-bar-fill" data-width="85%"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-header">
+                <span>HTML5 / Vanilla CSS</span>
+                <span>95%</span>
+              </div>
+              <div class="skill-bar-bg">
+                <div class="skill-bar-fill" data-width="95%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 2 -->
+        <div class="glass-card">
+          <h3 class="skill-category-title">Backend</h3>
+          <div class="skills-list">
+            <div class="skill-item">
+              <div class="skill-header">
+                <span>Node.js / Express</span>
+                <span>85%</span>
+              </div>
+              <div class="skill-bar-bg">
+                <div class="skill-bar-fill" data-width="85%"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-header">
+                <span>Python / Django</span>
+                <span>80%</span>
+              </div>
+              <div class="skill-bar-bg">
+                <div class="skill-bar-fill" data-width="80%"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-header">
+                <span>PostgreSQL / MongoDB</span>
+                <span>80%</span>
+              </div>
+              <div class="skill-bar-bg">
+                <div class="skill-bar-fill" data-width="80%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 3 -->
+        <div class="glass-card">
+          <h3 class="skill-category-title">Tools & Architecture</h3>
+          <div class="skills-list">
+            <div class="skill-item">
+              <div class="skill-header">
+                <span>Git & GitHub Workflows</span>
+                <span>90%</span>
+              </div>
+              <div class="skill-bar-bg">
+                <div class="skill-bar-fill" data-width="90%"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-header">
+                <span>Docker & Containers</span>
+                <span>75%</span>
+              </div>
+              <div class="skill-bar-bg">
+                <div class="skill-bar-fill" data-width="75%"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-header">
+                <span>AWS & Cloud Deployments</span>
+                <span>70%</span>
+              </div>
+              <div class="skill-bar-bg">
+                <div class="skill-bar-fill" data-width="70%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- --- Experience / Timeline Section --- -->
+  <section id="experience">
+    <div class="container">
+      <div class="section-header" style="text-align: center; margin: 0 auto 5rem; max-width: 600px;">
+        <span class="section-subtitle">My Journey</span>
+        <h2 class="section-title">Work Experience</h2>
+        <p>A chronological history of my professional engineering work and accomplishments.</p>
+      </div>
+
+      <div class="timeline">
+        <!-- Item 1 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <span class="timeline-date">2024 - Present</span>
+          <h3 class="timeline-title">Lead Frontend Architect</h3>
+          <span class="timeline-company">Innovative Web Solutions Inc.</span>
+          <p>Supervise development of consumer dashboard applications. Spearheaded transition from legacy code bases to a Next.js framework, reducing page render times by 40%. Implemented shared atomic design systems to speed up interface development.</p>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <span class="timeline-date">2022 - 2024</span>
+          <h3 class="timeline-title">Full Stack Engineer</h3>
+          <span class="timeline-company">PixelCraft Digital Agency</span>
+          <p>Engineered full stack systems using Node.js and React. Collaborated closely with product designers to implement pixel-perfect user flows. Optimized database schemas, leading to a 30% speedup in query executions.</p>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <span class="timeline-date">2021 - 2022</span>
+          <h3 class="timeline-title">Software Engineering Intern</h3>
+          <span class="timeline-company">CloudSync Technology</span>
+          <p>Contributed to internal REST API development and UI component test coverage. Participated in daily scrum meetings and conducted peer review workflows.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- --- Footer --- -->
+  <footer>
+    <div class="container footer-content">
+      <a href="index.html" class="logo">
+        Sachin<span>.dev</span>
+      </a>
+      <p style="max-width: 500px; margin-bottom: 1rem;">Building scalable, clean web solutions to elevate digital experiences.</p>
+      
+      <div class="social-links">
+        <a href="#" class="social-link" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="#" class="social-link" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="#" class="social-link" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#" class="social-link" aria-label="Dribbble"><i class="fa-brands fa-dribbble"></i></a>
+      </div>
+      
+      <div class="copyright">
+        &copy; 2026 Sachin. All rights reserved. Designed with passion.
+      </div>
+    </div>
+  </footer>
+
+  <!-- --- Custom Scripts --- -->
+  <script>
+    // Header Scroll Toggle
+    window.addEventListener('scroll', () => {
+      const header = document.getElementById('header');
+      if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+
+    // Mobile Navbar Toggle
+    const menuToggle = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('nav-links');
+
+    menuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+      const icon = menuToggle.querySelector('i');
+      if (navLinks.classList.contains('active')) {
+        icon.classList.remove('fa-bars');
+        icon.classList.add('fa-xmark');
+      } else {
+        icon.classList.remove('fa-xmark');
+        icon.classList.add('fa-bars');
+      }
+    });
+
+    // Close menu when clicking links
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+        menuToggle.querySelector('i').classList.add('fa-bars');
+        menuToggle.querySelector('i').classList.remove('fa-xmark');
+      });
+    });
+
+    // Animate Skill Bars on Load / Scroll
+    document.addEventListener("DOMContentLoaded", () => {
+      const skillFills = document.querySelectorAll('.skill-bar-fill');
+      
+      // We will trigger the width animation after a small delay
+      setTimeout(() => {
+        skillFills.forEach(fill => {
+          const targetWidth = fill.getAttribute('data-width');
+          fill.style.width = targetWidth;
+        });
+      }, 300);
+    });
+  </script>
+</body>
+</html>

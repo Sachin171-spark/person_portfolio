@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sachin's Personal Portfolio - Full Stack Developer & UI/UX Designer. Explore my projects and skills.">
+  <title>Sachin | Personal Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- FontAwesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- --- Header / Navbar --- -->
+  <header id="header">
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        Sachin<span>.dev</span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="project.html">Projects</a></li>
+        <li><a href="#contact" class="btn btn-secondary" style="padding: 0.5rem 1.2rem; font-size: 0.85rem;">Hire Me</a></li>
+      </ul>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- --- Hero Section --- -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <span class="hero-subtitle">Welcome to my space</span>
+          <h1 class="hero-title">
+            Hi, I'm Sachin<br>
+            <span class="gradient-text" id="typed-text"></span><span class="typed-cursor" style="color: var(--accent-cyan); font-weight: 300; animation: blink 0.7s infinite;">|</span>
+          </h1>
+          <p class="hero-description">
+            I craft immersive, high-performance web applications and sleek UI/UX experiences. Leveraging modern technologies to turn complex problems into elegant digital solutions.
+          </p>
+          <div class="hero-cta">
+            <a href="project.html" class="btn btn-primary">
+              View My Work <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a href="#contact" class="btn btn-secondary">Contact Me</a>
+          </div>
+        </div>
+        
+        <div class="hero-visual">
+          <div class="hero-blob"></div>
+          <div class="hero-avatar">
+            <!-- Sleek custom code/developer SVG visual -->
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="avatar-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="var(--accent-cyan)" />
+                  <stop offset="100%" stop-color="var(--accent-violet)" />
+                </linearGradient>
+              </defs>
+              <!-- Laptop body -->
+              <path d="M20 70 L80 70 L85 75 L15 75 Z" fill="url(#avatar-gradient)" opacity="0.9"/>
+              <!-- Screen -->
+              <rect x="25" y="25" width="50" height="40" rx="3" fill="none" stroke="url(#avatar-gradient)" stroke-width="2.5"/>
+              <!-- Code brackets inside screen -->
+              <path d="M42 40 L36 45 L42 50" fill="none" stroke="var(--text-main)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M58 40 L64 45 L58 50" fill="none" stroke="var(--text-main)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M52 38 L48 52" fill="none" stroke="var(--accent-cyan)" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- --- Brief Services / Highlight Section --- -->
+  <section id="services" style="background-color: var(--bg-dark-accent); position: relative;">
+    <div class="container">
+      <div class="section-header" style="text-align: center; margin: 0 auto 5rem;">
+        <span class="section-subtitle">What I Do</span>
+        <h2 class="section-title">Creative Solutions, Built to Scale</h2>
+        <p>I specialize in building modular, accessible, and fast web products designed to delight users.</p>
+      </div>
+      
+      <div class="grid-3">
+        <div class="glass-card">
+          <div class="service-icon" style="font-size: 2.5rem; color: var(--accent-cyan); margin-bottom: 1.5rem;">
+            <i class="fa-solid fa-code"></i>
+          </div>
+          <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">Frontend Development</h3>
+          <p>Building responsive, interactive interfaces using React, Vue, Next.js, and high-performance vanilla JS/CSS.</p>
+        </div>
+        
+        <div class="glass-card">
+          <div class="service-icon" style="font-size: 2.5rem; color: var(--accent-cyan); margin-bottom: 1.5rem;">
+            <i class="fa-solid fa-server"></i>
+          </div>
+          <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">Backend Engineering</h3>
+          <p>Architecting secure APIs, database systems, and robust backend logic with Node.js, Express, Python, and SQL/NoSQL databases.</p>
+        </div>
+        
+        <div class="glass-card">
+          <div class="service-icon" style="font-size: 2.5rem; color: var(--accent-cyan); margin-bottom: 1.5rem;">
+            <i class="fa-solid fa-compass-drafting"></i>
+          </div>
+          <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">UI/UX Architecture</h3>
+          <p>Designing modern, intuitive workflows and interactive design systems that maximize engagement and ease-of-use.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- --- Highlight Projects --- -->
+  <section id="projects-highlight">
+    <div class="container">
+      <div class="section-header" style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 4rem; flex-wrap: wrap; gap: 2rem;">
+        <div>
+          <span class="section-subtitle">Featured Work</span>
+          <h2 class="section-title">Selected Projects</h2>
+        </div>
+        <a href="project.html" class="btn btn-secondary" style="margin-bottom: 0.5rem;">
+          View All Projects <i class="fa-solid fa-arrow-right" style="margin-left: 0.5rem;"></i>
+        </a>
+      </div>
+
+      <div class="grid-3">
+        <!-- Project 1 -->
+        <div class="project-card">
+          <div class="project-image">
+            <span class="project-badge">Featured</span>
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <path d="M25 25h50v50H25z" fill="none" stroke="url(#avatar-gradient)" stroke-width="2"/>
+              <circle cx="50" cy="50" r="15" fill="none" stroke="var(--accent-cyan)" stroke-width="2"/>
+              <path d="M35 50h30" stroke="var(--text-main)" stroke-width="1.5"/>
+            </svg>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="project-tag">Next.js</span>
+              <span class="project-tag">TailwindCSS</span>
+              <span class="project-tag">TypeScript</span>
+            </div>
+            <h3 class="project-card-title">SaaS Analytics Platform</h3>
+            <p class="project-desc">A real-time data dashboard with complex chart visualizations, user management, and seamless Stripe billing integrations.</p>
+            <div class="project-links">
+              <a href="project.html" class="project-link">Learn More <i class="fa-solid fa-chevron-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card">
+          <div class="project-image">
+            <span class="project-badge">Popular</span>
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <rect x="25" y="30" width="50" height="40" rx="4" fill="none" stroke="url(#avatar-gradient)" stroke-width="2"/>
+              <path d="M35 40h30M35 50h20" stroke="var(--accent-cyan)" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="project-tag">React</span>
+              <span class="project-tag">Node.js</span>
+              <span class="project-tag">MongoDB</span>
+            </div>
+            <h3 class="project-card-title">E-Commerce Ecosystem</h3>
+            <p class="project-desc">A fully customizable, highly responsive digital storefront equipped with a custom checkout pipeline and admin cms panel.</p>
+            <div class="project-links">
+              <a href="project.html" class="project-link">Learn More <i class="fa-solid fa-chevron-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- --- Contact Section --- -->
+  <section id="contact" style="background-color: var(--bg-dark-accent); scroll-margin-top: 70px;">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Get In Touch</span>
+        <h2 class="section-title">Let's Work Together</h2>
+        <p>Have an idea or a project in mind? Drop a line and let's collaborate on building something amazing.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h3>Contact Details</h3>
+          <p>Feel free to reach out via email or connect with me through my social profiles.</p>
+          
+          <div class="contact-info-list">
+            <div class="contact-info-item">
+              <div class="contact-icon">
+                <i class="fa-regular fa-envelope"></i>
+              </div>
+              <div class="contact-text">
+                <h4>Email Me</h4>
+                <p>sachin.developer@example.com</p>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-icon">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <div class="contact-text">
+                <h4>Call Me</h4>
+                <p>+1 (555) 019-2834</p>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-icon">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div class="contact-text">
+                <h4>Location</h4>
+                <p>San Francisco, CA</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="glass-card" style="padding: 2.5rem 2rem;">
+          <form class="contact-form" onsubmit="event.preventDefault(); alert('Message sent successfully!'); this.reset();">
+            <div class="form-group">
+              <label class="form-label" for="name">Your Name</label>
+              <input type="text" id="name" class="form-input" placeholder="John Doe" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="email">Email Address</label>
+              <input type="email" id="email" class="form-input" placeholder="john@example.com" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="message">Message</label>
+              <textarea id="message" class="form-textarea" placeholder="Tell me about your project..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="align-self: flex-start; margin-top: 1rem;">
+              Send Message <i class="fa-regular fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- --- Footer --- -->
+  <footer>
+    <div class="container footer-content">
+      <a href="index.html" class="logo">
+        Sachin<span>.dev</span>
+      </a>
+      <p style="max-width: 500px; margin-bottom: 1rem;">Building scalable, clean web solutions to elevate digital experiences.</p>
+      
+      <div class="social-links">
+        <a href="#" class="social-link" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="#" class="social-link" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="#" class="social-link" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#" class="social-link" aria-label="Dribbble"><i class="fa-brands fa-dribbble"></i></a>
+      </div>
+      
+      <div class="copyright">
+        &copy; 2026 Sachin. All rights reserved. Designed with passion.
+      </div>
+    </div>
+  </footer>
+
+  <!-- --- Typing & General Page Interactions Script --- -->
+  <script>
+    // Header Scroll Styling
+    window.addEventListener('scroll', () => {
+      const header = document.getElementById('header');
+      if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+
+    // Mobile Navbar Toggle
+    const menuToggle = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('nav-links');
+
+    menuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+      const icon = menuToggle.querySelector('i');
+      if (navLinks.classList.contains('active')) {
+        icon.classList.remove('fa-bars');
+        icon.classList.add('fa-xmark');
+      } else {
+        icon.classList.remove('fa-xmark');
+        icon.classList.add('fa-bars');
+      }
+    });
+
+    // Close menu when clicking links
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+        menuToggle.querySelector('i').classList.add('fa-bars');
+        menuToggle.querySelector('i').classList.remove('fa-xmark');
+      });
+    });
+
+    // Typing Effect Animation
+    const words = ["Full Stack Developer", "UI/UX Architect", "Problem Solver"];
+    let wordIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+    const typedTextEl = document.getElementById('typed-text');
+    const typingSpeed = 100;
+    const deletingSpeed = 50;
+    const delayBetweenWords = 1500;
+
+    function type() {
+      const currentWord = words[wordIndex];
+      if (isDeleting) {
+        typedTextEl.textContent = currentWord.substring(0, charIndex - 1);
+        charIndex--;
+      } else {
+        typedTextEl.textContent = currentWord.substring(0, charIndex + 1);
+        charIndex++;
+      }
+
+      if (!isDeleting && charIndex === currentWord.length) {
+        isDeleting = true;
+        setTimeout(type, delayBetweenWords);
+      } else if (isDeleting && charIndex === 0) {
+        isDeleting = false;
+        wordIndex = (wordIndex + 1) % words.length;
+        setTimeout(type, 300);
+      } else {
+        setTimeout(type, isDeleting ? deletingSpeed : typingSpeed);
+      }
+    }
+
+    // Start Typing Effect
+    document.addEventListener("DOMContentLoaded", () => {
+      setTimeout(type, 500);
+    });
+  </script>
+  
+  <style>
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0; }
+    }
+  </style>
+</body>
+</html>
